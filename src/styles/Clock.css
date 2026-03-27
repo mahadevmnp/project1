@@ -1,0 +1,43 @@
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timezone-card {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.timezone-card:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.time-display {
+    font-size: 2.5em;
+    color: #333;
+    margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+    .time-display {
+        font-size: 2em;
+    }
+    .timezone-card {
+        padding: 5px;
+        margin: 3px;
+    }
+}
